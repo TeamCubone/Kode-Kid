@@ -67,6 +67,9 @@ For control,
 ![Game Over](./Assets/GameOver.png)
 *Game Over Screen*
 
+![Unity Source Control](./Assets/Unity-SC.png)
+*Unity Source Control*
+
 
 ---
 # Change Logs
@@ -81,4 +84,12 @@ For control,
 - Created game over screen and added character select to the game. - 05/19/2020
 - Implemented parallax background to the game and pause interface in the game. - 05/19/2020
 - Added main menu to the game and enemy to appear. - 05/18/2020
-- Implemented base platforms and tiles and character sprites to render with animation. -  05/18/2020
+- Implemented base platforms and tiles and character sprites to render with animation. -  05/18/2020 
+
+## Resources
+
+[Udemy](https://www.udemy.com/course/unitycourse)  
+[Rule Tile](https://github.com/Unity-Technologies/2d-extras)  
+[Tiles](https://creativemarket.com/Foxfin/304893-Super-Platformer-Assets)  
+[Parallax Background](https://ansimuz.itch.io/mountain-dusk-parallax-background?download)  
+[Graduation song](https://www.youtube.com/watch?v=_doAV8bx0xg)  
