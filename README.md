@@ -1,8 +1,24 @@
 # Kode Kid
 
+---
+### Table Of Contents
+1. [Overview](#overview)
+2. [Deployed Site](#Deployed-Link)
+3. [Authors](#Authors)
+4. [Tools Used](#Tools-Used)
+5. [Getting Started](#Getting-Started)
+6. [Initial Wireframe](#Initial-wireframe)
+7. [Visual](#Visual)
+8. [Change Logs](#change-logs)
+9. [Resources](#Resources)
 
-## Unity Application
+
+## Overview
 Side scrolling 2D game built in Unity. A "student" is trying to make it to class, but he must face many obstacles and overcome puzzles and platforming to reach his goal.
+
+---
+## Deployed Link
+[Deployed Link](https://hcoggers.itch.io/kode-kid)
 
 ---
 ## Authors
@@ -11,7 +27,6 @@ Side scrolling 2D game built in Unity. A "student" is trying to make it to class
 [Brandon Johnson](https://github.com/SplinterCel3000)  
 [Harrison Cogswell](https://github.com/HCoggers)  
 [Jin Woo Kim](https://github.com/Jinwoov)  
-
 
 ---
 
@@ -32,12 +47,14 @@ Clone this repository to your local machine.
 $ git clone https://github.com/TeamCubone/Kode-Kid.git
 ```
 
-Once pulled down to your machine, open the project in the Unity and under `File` -> `Build and Run`
+Option 1. Once pulled down to your machine, open the project in the Unity and under `File` click on `Build and Run`
 
 This will run the application successfully and start the application. 
 
+Option 2 Depending on operating system, for Mac user navigate to `KodeKid.app` to run the application. For window user, navigate to KodeKidWindows and run the program.
+
 For control,
-`Left` & `right` or `A` & `D` to move, and space bar or `W` to jump. Escape to pause or quit the application.
+`Left` & `right` or `A` & `D` to move, and `space bar` or `W` to jump. Hit `Escape` to pause or quit the application.
 
 ---
 ## Initial Wireframe
@@ -51,7 +68,7 @@ For control,
 
 ---
 
-## Usage
+## Visual
 ![Game Start](./Assets/Game-start.png)
 *Start Screen*
 
@@ -72,7 +89,7 @@ For control,
 
 
 ---
-# Change Logs
+## Change Logs
 
 **1.0 Version Released**
 - Added background sound to the game - 05/20/2020

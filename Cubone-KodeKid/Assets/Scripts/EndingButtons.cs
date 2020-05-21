@@ -7,23 +7,17 @@ using UnityEngine.UI;
 
 public class EndingButtons : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    /// <summary>
+    /// Finishing the application
+    /// </summary>
     public void ApplicationFinish()
     {
         Application.Quit();
     }
 
+    /// <summary>
+    /// Loading the scene to About us page when clicked
+    /// </summary>
     public void AboutUs()
     {
         SceneManager.LoadScene("AboutUs");

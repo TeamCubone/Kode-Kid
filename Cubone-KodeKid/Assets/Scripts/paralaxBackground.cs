@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class paralaxBackground : MonoBehaviour
 {
+    /// <summary>
+    /// Properties that are used to create parallax background
+    /// </summary>
     [SerializeField] private Vector2 parralaxEffectMultiplier;
     [SerializeField] private bool infiniteHorizontal;
     [SerializeField] private bool infiniteVertical;
@@ -12,6 +15,9 @@ public class paralaxBackground : MonoBehaviour
     private float textureUnitSizeX;
     private float textureUnitSizeY;
 
+    /// <summary>
+    ///  Using this to start the camera at certain sprite
+    /// </summary>
     private void Start()
     {
         cameraTransform = Camera.main.transform;
@@ -19,9 +25,9 @@ public class paralaxBackground : MonoBehaviour
         Sprite sprite = GetComponent<SpriteRenderer>().sprite;
         Texture2D texture = sprite.texture;
         textureUnitSizeX = texture.width / sprite.pixelsPerUnit;
-
     }
 
+    // This will change the position of the moon and other background using the camera vectors
     private void Update()
     {
         Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
