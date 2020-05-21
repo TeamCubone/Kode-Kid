@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
+    /// <summary>
+    /// Game session class that will carry players lives, score and other variable that will track player's status
+    /// </summary>
     [SerializeField] int PlayerLives = 3;
     [SerializeField] int Score = 0;
     [SerializeField] Text LivesText;
@@ -14,8 +17,11 @@ public class GameSession : MonoBehaviour
     [SerializeField] float LevelLoadDealy = 2f;
     [SerializeField] AudioClip DeathSFX;
     [SerializeField] public Text RoundTicker;
-
     public int RoundCounter;
+
+    /// <summary>
+    /// This will allow user to have three lives and upon three death it will destroy the world
+    /// </summary>
     private void Awake()
     {
         int numGameSession = FindObjectsOfType<GameSession>().Length;
@@ -37,6 +43,9 @@ public class GameSession : MonoBehaviour
         StartCoroutine(FadeOutRound());
     }
 
+    /// <summary>
+    /// This will check if our round is being render correctly. and also handles the fade out of round text
+    /// </summary>
     void Update()
     {
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -54,6 +63,9 @@ public class GameSession : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Getting the death to decrement upon death and let the user see the gameover scene if they die
+    /// </summary>
     public void ProcessPlayerDeath()
     {
         if(PlayerLives > 1)
@@ -71,12 +83,20 @@ public class GameSession : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Adding the score, if player picks up coins
+    /// </summary>
+    /// <param name="point"></param>
     public void AddScore(int point)
     {
         Score += point;
         ScoreText.text = Score.ToString();
     }
 
+    /// <summary>
+    /// Fading out the each round
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator FadeOutRound()
     {
         yield return new WaitForSecondsRealtime(2f);
@@ -84,7 +104,10 @@ public class GameSession : MonoBehaviour
         RoundTicker.color = Color.clear;
     }
 
-
+    /// <summary>
+    /// Loading to the next scene.
+    /// </summary>
+    /// <returns></returns>
     IEnumerator LoadSameScene()
     {
         yield return new WaitForSecondsRealtime(LevelLoadDealy);
@@ -92,6 +115,9 @@ public class GameSession : MonoBehaviour
         TakeLives();
     }
 
+    /// <summary>
+    /// Tkaing the life when player collide to hazard or enemy
+    /// </summary>
     private void TakeLives()
     {
         PlayerLives--;

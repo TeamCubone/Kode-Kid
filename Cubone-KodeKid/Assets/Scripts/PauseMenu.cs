@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    /// <summary>
+    ///  Using this to pause the game this variable is false to start
+    /// </summary>
     public static bool GameIsPaused = false;
 
+    /// <summary>
+    ///  when user press on escape, it will trigger pause and show buttons
+    /// </summary>
     public GameObject pauseMenuUI;
     // Update is called once per frame
     void Update()
@@ -24,6 +30,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    // Resume when user clicks on resume
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
@@ -31,6 +38,9 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
+    /// <summary>
+    /// User is stopped due to the pause
+    /// </summary>
     void Pause()
     {
         pauseMenuUI.SetActive(true);
@@ -38,6 +48,9 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    /// <summary>
+    /// when load to the menu it will destroy canvas and back to the main menu
+    /// </summary>
     public void LoadMenu()
     {
         Destroy(GameObject.FindWithTag("GameSesh"));
@@ -45,9 +58,11 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    /// <summary>
+    /// Quitting the game
+    /// </summary>
     public void QuitGame()
     {
-        Debug.Log("Quiting game..");
         Application.Quit();
     }
 }

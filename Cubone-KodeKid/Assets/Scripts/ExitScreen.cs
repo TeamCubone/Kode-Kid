@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ExitScreen : MonoBehaviour
 {
+    /// <summary>
+    /// When finishing the game it will destroy the gamesession.
+    /// </summary>
     public void EndTheGame()
     {
         Destroy(GameObject.FindWithTag("GameSesh"));
