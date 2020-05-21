@@ -52,7 +52,7 @@ For control,
 ---
 
 ## Usage
-![Game Start](./Assets/Game-Start.png)
+![Game Start](./Assets/Game-start.png)
 *Start Screen*
 
 ![Character](./Assets/Character.png)
