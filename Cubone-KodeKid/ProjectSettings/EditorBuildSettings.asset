@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: c11e3afde5fd35f4da5353407ba721de
+  - enabled: 1
+    path: Assets/Scenes/PlayerSelect.unity
+    guid: af05fb88f809745acb9d92ab5d6e5053
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 77be1a56d4265ec4392b7f16334bfab5
+  - enabled: 1
+    path: Assets/Scenes/LvlOne.unity
+    guid: 0728e4501a378a44f82eb26cb11ca0eb
+  - enabled: 1
+    path: Assets/Scenes/LvlTwo.unity
+    guid: a25c75d1d7769f0439d47ce930ecb253
+  - enabled: 1
+    path: Assets/Scenes/LvlThree.unity
+    guid: f2faba688758dc24dac38d8404a3e155
+  - enabled: 1
+    path: Assets/Scenes/WInning Screen.unity
+    guid: 656ca2c7bae1c654d84f6a40bba90d7a
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: b0bd3efc666f546c2baa1f89f1abd936
+  - enabled: 1
+    path: Assets/Scenes/AboutUs.unity
+    guid: e4c68982cf2e940cfabf980e47d7273f
+  - enabled: 1
+    path: Assets/Scenes/AllyProfile.unity
+    guid: b2c5020d87d06456aa5ac5447180f4f6
+  - enabled: 1
+    path: Assets/Scenes/BrandonProfile.unity
+    guid: 808f697ac9b3b44d9a361bf6eae70342
+  - enabled: 1
+    path: Assets/Scenes/HarryProfile.unity
+    guid: d1144eeb640f34195bb7262b4f795db3
+  - enabled: 1
+    path: Assets/Scenes/JinProfile.unity
+    guid: 4ed9ef3e4eee6479eb53bdee43eeea23
+  m_configObjects: {}

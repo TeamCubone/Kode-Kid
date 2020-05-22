@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GameSesh
+  - RoundText
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Player
+  - Background
+  - Enemies
+  - Waters
+  - Interactables
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3573438655
+    locked: 0
+  - name: Enemies
+    uniqueID: 1999679463
+    locked: 0
+  - name: Waters
+    uniqueID: 1689707973
+    locked: 0
+  - name: Player
+    uniqueID: 104674799
+    locked: 0
+  - name: Foreground
+    uniqueID: 2029817557
+    locked: 0
+  - name: Detail
+    uniqueID: 772624427
+    locked: 0
+  - name: Interactables
+    uniqueID: 3135677489
+    locked: 0
